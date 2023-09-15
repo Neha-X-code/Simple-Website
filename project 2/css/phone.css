@@ -1,0 +1,74 @@
+/* Navigation  */
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding:0px 9px;
+    padding-bottom: 4px;
+}
+
+
+/* Home */
+#home{
+    height:303px;
+    padding: 13px 7px;
+    
+    
+}
+#home::before{
+    height:630px;
+    /* background-position: -467px -216px; */
+    
+}
+
+#home p{
+    font-size: 12px;
+}
+.btn{
+    font-size: 12px;
+    padding: 3px 10px;
+}
+/* Courses */
+
+#courses{
+    flex-direction: column;
+}
+#courses .box img {
+    width: 220px;
+    height: 210px;
+}
+#courses .box {
+    margin: 2px 12px;
+}
+/* Sponsors */
+
+#sponsors{
+flex-wrap: wrap;
+}
+#sponsors img{
+    width: 69px;
+    padding: 3px;
+    height: auto;
+}
+
+/* Contact  */
+#contact-box form{
+    width: 80%;
+}
+
+
+/* footer */
+
+
+/* Utility Classes */
+#h-primary{
+    font-size: 24px;
+}
+
+
+
+
+
+

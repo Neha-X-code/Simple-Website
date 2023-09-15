@@ -1,0 +1,227 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navbar */
+#navbar{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    /* position: sticky; */
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    
+}
+/* Navbar logo nd img*/
+#logo{
+    margin: 4px 18px;
+}
+
+#logo img{
+    width: 50px;
+    height: 50px;
+    margin: -2px 13px;
+}
+/* Navbar list*/
+#navbar ul{
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.05rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 4px 15px;
+    border-radius: 29px;
+    text-decoration: none;
+  
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color:white;
+}
+/*Home Section*/
+#home{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding:13px 45px;
+    height:411px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../mainbg.jpg') no-repeat center center/cover;
+    background-position: 0px -217px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 115%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+/*Courses*/
+#courses{
+    margin: 0px;
+    display: flex;
+}
+#courses-container {
+
+    background-color:rgba(0, 0, 0, 0.952);
+}
+#courses .box{   
+    border: 2px solid rgb(0, 0, 0);
+    margin: 5px 40px;
+    border-radius: 11px;
+    background-color: #fffffff6;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#courses .box img{
+    width: 350px;
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+
+#courses .box p{
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/* Sponsors */
+
+#sponsors-section{
+    position: relative;
+   
+}
+
+#sponsors-section::before{
+    content: "";
+    position: absolute;
+    background: url(..//mainbg2.jpg);
+    background-position: -330px -494px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#sponsors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsors-item{
+    padding: 20px;
+}
+#sponsors img{
+    height: 100px;
+}
+/* contact Section */
+#contact-section{
+    background-color: rgba(0, 0, 0, 0.952);
+    position: relative;
+    height: 350px; 
+}
+ #contact-section::before{
+    content: "";
+    position: absolute;
+    background: url(..//contact.jpg) no-repeat center center/cover;
+    background-position: -28px -320px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+} 
+#contact-box{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.1rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    font-family: 'Nunito', sans-serif;
+} 
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Nunito', sans-serif;
+}
+
+/*Utilities*/
+#home h1{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+#home p{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 1.05rem;
+}
+.h-primary{
+    color: white;
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.h-secondary{
+    font-size: 1.3rem;
+    padding: 12px;
+    font-family: 'Nunito', sans-serif;
+}
+.btn{
+    padding: 7px 17px;
+    border: 3px  solid white;
+    border-radius: 17px;
+    background-color: rgba(0, 0, 0, .8);
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0,0.9);
+}
+.center{
+    text-align: center;
+}
+footer{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.952) ;
+    padding: 9px 10px;
+}
